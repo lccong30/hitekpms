@@ -2,18 +2,8 @@ import React from "react";
 import useScrollFadeIn from "../hook/useScrollFadeIn";
 
 const ItemProcess = ({ img1, idx, title, icon }) => {
-  // const refA = useRef();
-
   const refA = useScrollFadeIn("animate__swing", 600);
 
-  // useEffect(() => {
-  //   document.addEventListener("scroll", () => {
-  //     if (!refA.current) return;
-  //     if (refA.current.offsetTop - window.scrollY < 600) {
-  //       refA.current.classList.add("animate__fadeIn");
-  //     }
-  //   });
-  // }, []);
   return (
     <div
       className={`h-[427px] lg:h-[497px]  bg-[#F5F5F7] animate__animated opacity-1 `}
