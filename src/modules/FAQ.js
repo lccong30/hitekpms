@@ -11,11 +11,6 @@ const faq = [
   {
     heading: "Tại sao nên sử dụng phần mềm quản lý tòa nhà?",
     content:
-      "Sử dụng phần mềm quản lý tòa nhà giúp quản lý tòa nhà hiệu quả hơn, tiết kiệm thời gian và chi phí, đồng thời cải thiện chất lượng dịch vụ và tăng tính an toàn cho tòa nhà.",
-  },
-  {
-    heading: "Lợi ích của việc sử dụng phần mềm quản lý tòa nhà là gì?",
-    content:
       "Sử dụng phần mềm quản lý tòa nhà giúp quản lý tòa nhà hiệu quả hơn, tiết kiệm thời gian và chi phí, tăng tính an toàn cho tòa nhà, cải thiện chất lượng dịch vụ, nâng cao sự hài lòng của khách hàng và cải thiện hiệu suất hoạt động.",
   },
   {
@@ -41,11 +36,12 @@ const faq = [
   },
 ];
 const FAQ = () => {
-  const [isShow, setShow] = useState(false);
   const [selected, setSelected] = useState(null);
   const handleClick = (idx) => {
+    if (selected === idx) {
+      return setSelected(null);
+    }
     setSelected(idx);
-    setShow(!isShow);
   };
 
   const refTitle = useScrollFadeIn("animate__backInRight");
@@ -54,7 +50,7 @@ const FAQ = () => {
       <div className="py-[50px] md:py-[100px]">
         <h2
           ref={refTitle}
-          className=" mb-5 md:mb-20 text-black font-bold text-center text-3xl md:text-5xl animate__animated opacity-0"
+          className="mb-5 text-3xl font-bold text-center text-black opacity-0 md:mb-20 md:text-5xl animate__animated"
         >
           Câu hỏi thường gặp
         </h2>
@@ -65,9 +61,7 @@ const FAQ = () => {
               heading={item.heading}
               content={item.content}
               onClick={() => handleClick(idx)}
-              isShow={isShow}
-              idx={idx}
-              selected={selected}
+              selected={idx === selected}
             />
           ))}
         </div>

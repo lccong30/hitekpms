@@ -23,6 +23,7 @@ const Home = () => {
   const services = useRef(null);
   const home = useRef(null);
   const contact = useRef(null);
+  const support = useRef(null);
 
   const rollback = true;
 
@@ -60,6 +61,13 @@ const Home = () => {
       },
     },
     {
+      name: "Hỗ trợ",
+      onClick: () => {
+        setOpenSidebar(false);
+        scrollToSection(support);
+      },
+    },
+    {
       name: "Liên hệ",
       onClick: () => {
         setOpenSidebar(false);
@@ -68,10 +76,10 @@ const Home = () => {
     },
   ];
   return (
-    <div>
+    <div className="overflow-hidden">
       <div
         ref={home}
-        className="fixed top-0 left-0 z-20 w-full bg-white  border"
+        className="fixed top-0 left-0 z-20 w-full bg-white border "
       >
         <div className="w-[80%] mx-auto ">
           <nav className="flex items-center justify-between py-5 text-xl font-bold">
@@ -89,12 +97,17 @@ const Home = () => {
               >
                 Trang chủ
               </li>
-              {/* <li className="cursor-pointer">Về chúng tôi</li> */}
               <li
                 onClick={() => scrollToSection(services)}
                 className="cursor-pointer"
               >
                 Dịch vụ
+              </li>
+              <li
+                onClick={() => scrollToSection(support)}
+                className="cursor-pointer"
+              >
+                Hỗ trợ
               </li>
               <li
                 onClick={() => scrollToSection(contact)}
@@ -103,28 +116,23 @@ const Home = () => {
                 Liên hệ
               </li>
             </ul>
-            {/* <div className="hidden gap-5 xl:flex">
-              <button className="button-79">Đăng nhập</button>
-              <button className="button-75">
-                <span className="text"> Đăng ký</span>
-              </button>
-            </div> */}
-            <div className="xl:hidden">
+
+            <div className="block xl:hidden">
               <span onClick={() => setOpenSidebar(!openSidebar)}>
                 {openSidebar ? <AiOutlineClose /> : <FaBars />}
               </span>
-
-              {openSidebar && (
-                <Sidebar onClick={() => scrollToSection(contact)}>
-                  {menu.map((item) => (
-                    <ItemSidebar
-                      key={item.name}
-                      name={item.name}
-                      onClick={item.onClick}
-                    />
-                  ))}
-                </Sidebar>
-              )}
+              <Sidebar
+                openSidebar={openSidebar}
+                onClick={() => scrollToSection(contact)}
+              >
+                {menu.map((item) => (
+                  <ItemSidebar
+                    key={item.name}
+                    name={item.name}
+                    onClick={item.onClick}
+                  />
+                ))}
+              </Sidebar>
             </div>
           </nav>
         </div>
@@ -144,7 +152,7 @@ const Home = () => {
       </div>
       <Design />
       {/* bg-[#FFE2D7] */}
-      <div className="">
+      <div ref={support} className="border-t">
         <Support />
       </div>
       <Product />

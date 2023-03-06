@@ -6,7 +6,7 @@ const ItemProcess = ({ img1, idx, title, icon }) => {
 
   return (
     <div
-      className={`h-[427px] lg:h-[497px]  bg-[#F5F5F7] animate__animated opacity-1 `}
+      className={`h-[327px] lg:h-[497px]  bg-[#F5F5F7] animate__animated opacity-1 `}
       ref={refA}
     >
       <div className="flex flex-col justify-between h-full ">
@@ -18,7 +18,7 @@ const ItemProcess = ({ img1, idx, title, icon }) => {
             {title}
           </h2>
         </div>
-        <img className="h-[190px] lg:h-[280px]  mx-auto" src={img1} alt="" />
+        <img className="h-[130px] lg:h-[280px]  mx-auto" src={img1} alt="" />
       </div>
     </div>
   );

@@ -25,7 +25,7 @@ const Support = () => {
           <h1 className="text-xl md:text-[36px] text-[#001238] font-bold mb-5">
             Hỗ trợ tận tình tận tâm, 24/7/365
           </h1>
-          <p className="text-lg font-normal text-[#000000] md:text-[24px]">
+          <p className="text-lg font-normal text-[#778295] md:text-[24px]">
             {/*  Chúng tôi luôn sẵn sàng hỗ trợ khách hàng
             một cách nhanh chóng, đáng tin cậy. */}
             Chúng tôi không chỉ là một nhà cung cấp công nghệ, cung cấp các giải

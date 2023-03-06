@@ -1,7 +1,8 @@
 import React from "react";
 import { AiOutlinePlusCircle, AiOutlineMinusCircle } from "react-icons/ai";
+import { Collapse } from "react-collapse";
 
-const ItemFaq = ({ heading, content, onClick, isShow, idx, selected }) => {
+const ItemFaq = ({ heading, content, onClick, selected }) => {
   return (
     <>
       <div className="border-b cursor-pointer">
@@ -11,24 +12,21 @@ const ItemFaq = ({ heading, content, onClick, isShow, idx, selected }) => {
         >
           {heading}
           <>
-            {isShow && idx === selected ? (
+            {selected ? (
               <AiOutlineMinusCircle color={"blue"} />
             ) : (
               <AiOutlinePlusCircle color={"blue"} />
             )}
           </>
         </h2>
-        {idx === selected && isShow && (
+
+        <Collapse isOpened={selected}>
           <p
-            className={`${
-              idx === selected && isShow
-                ? "h-auto transition-all"
-                : "h-0 transition-all"
-            } px-4 md:px-10 text-black pb-5 text-sm md:text-lg font-medium   transition-all accordion-content animate__slideOutDown`}
+            className={` px-4 md:px-10 text-black pb-5 text-sm md:text-lg font-medium   transition-all accordion-content animate__slideOutDown`}
           >
             {content}
           </p>
-        )}
+        </Collapse>
       </div>
     </>
   );

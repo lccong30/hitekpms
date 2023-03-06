@@ -11,8 +11,8 @@ const TaskItem = ({ icon = "", title = "", desc = "", idx = 0 }) => {
       >
         <img src={icon} alt="" className="w-20 h-20 mb-2 task__item-icon" />
         <div className="flex flex-col items-center justify-center ">
-          <h2 className="text-2xl font-semibold">{title}</h2>
-          <p className="text-lg font-semibold text-center text-gray-600 ">
+          <h2 className="text-xl font-semibold md:text-2xl">{title}</h2>
+          <p className="text-base font-semibold text-center text-gray-600 md:text-lg ">
             {desc}
           </p>
         </div>

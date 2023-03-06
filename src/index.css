@@ -206,6 +206,10 @@ body {
     height: 100%;
 }
 
+.ReactCollapse--collapse {
+    transition: height 500ms;
+}
+
 
 
 /* Accordion */
@@ -343,6 +347,12 @@ textarea {
         width: 100%;
     }
 
+}
+
+/* Side bar */
+
+.trans {
+    transition: all 0.6s ease-in-out;
 }
 
 /*  ------------------------------- BUTTON --------------------------- */
