@@ -10,3 +10,4 @@ export { default as Supportpng } from "./Supportpng.png";
 export { default as Support02 } from "./Support02.png";
 export { default as BMS } from "./BMS.png";
 export { default as MLOP } from "./MLOP.jpg";
+export { default as Banner2 } from "./pms_house.png";

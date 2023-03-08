@@ -36,11 +36,14 @@ const Support = () => {
             {/* Bất kể khách hàng cần hỗ trợ
             gì, chúng tôi luôn sẵn sàng và nhanh chóng giải đáp thắc mắc và giải
             quyết các vấn đề liên quan đến giải pháp phần mềm của chúng tôi. */}
-            <div className="bg-blue-500 w-[100px] my-4 h-[2px]"></div>
+            <div className="bg-blue-500 w-[100px] my-[20px] h-[2px]"></div>
             Với chúng tôi, sự hài lòng của khách hàng là ưu tiên hàng đầu và
             chúng tôi sẽ không ngừng nỗ lực để đáp ứng mọi nhu cầu của khách
             hàng một cách tốt nhất.
           </p>
+          <button className="p-3 px-5 text-white text-sm w-[140px] md:w-[150px] mt-[20px] md:text-lg font-bold bg-blue-500">
+            Đăng ký
+          </button>
         </div>
         <img
           ref={rightRef}

@@ -1,5 +1,5 @@
 import React from "react";
-import { BannerI } from "../assets/images";
+import { BannerI, Banner2 } from "../assets/images";
 
 const Banner = () => {
   return (
@@ -10,7 +10,7 @@ const Banner = () => {
             HiTek PMS <br />
             Sự lựa chọn hoàn hảo cho quản lý tòa nhà thông minh.
           </h1>
-          <p className="text-base md:text-xl font-medium text-gray-500 animate__animated animate__jello">
+          <p className="text-base font-medium text-gray-500 md:text-xl animate__animated animate__jello">
             Quản lý tòa nhà là một công việc quan trọng và đòi hỏi nhiều thời
             gian, tài nguyên. Tuy nhiên, với giải pháp phần mềm quản lý tòa nhà
             thông minh, việc quản lý tòa nhà trở nên dễ dàng và tiện lợi hơn bao
@@ -34,7 +34,7 @@ const Banner = () => {
           </div>
         </div>
         <img
-          className=" w-full mt-5 md:mt-0 lg:w-[49%] object-contain animate__animated animate__bounceIn "
+          className=" w-full mt-5 md:mt-0 lg:w-[49%] object-contain animate__animated  animate__bounceInRight"
           src={BannerI}
           alt=""
         />

@@ -38,7 +38,7 @@ const Design = () => {
             Google, Amazon, Microsoft .
           </p>
 
-          <div className="w-[100px] border border-blue-500 my-[30px]"></div>
+          <div className="w-[100px] border border-blue-500 my-[20px]"></div>
 
           <ul className="text-[#778295] text-lg md:text-[20px] ">
             <li

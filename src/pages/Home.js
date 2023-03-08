@@ -79,10 +79,10 @@ const Home = () => {
     <div className="overflow-hidden">
       <div
         ref={home}
-        className="fixed top-0 left-0 z-20 w-full bg-white border "
+        className="fixed top-0 left-0 z-20 w-full bg-white border shadow-sm"
       >
         <div className="w-[80%] mx-auto ">
-          <nav className="flex items-center justify-between py-5 text-xl font-bold">
+          <nav className="flex items-center justify-between py-3 text-xl font-bold">
             <div
               className="flex items-center gap-3 cursor-pointer"
               onClick={() => scrollToSection(home)}
@@ -156,6 +156,7 @@ const Home = () => {
         <Support />
       </div>
       <Product />
+
       <div className="bg-[#FFF5EE]">
         <FAQ />
       </div>
