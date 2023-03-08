@@ -11,41 +11,43 @@ const ItemSubsystem = ({ title, content, img, text, maxLength = 91 }) => {
   };
 
   return (
-    <>
-      <div className="w-full lg:w-2/4">
-        <div className="py-5 bg-white rounded-lg shadow-2xl px-7">
-          <img
-            src={img}
-            alt=""
-            className="mb-6  xl:h-[460px] lg:h-[340px] object-cover w-full rounded-lg"
-          />
-          <div className="flex flex-col">
-            <h1 className="mb-3 text-lg  sm:text-2xl text-[#363636] font-bold ">
-              {title}
-            </h1>
-            <div className="text-base sm:text-2xl text-[#778295]  hover:text-blue-700 transition duration-500 ease-in-out   mb-4">
-              {isReadMore
-                ? content.split(":").map((item) => (
-                    <p
-                      className="flex gap-2 mb-3 text-blue-500 transition duration-500 ease-in-out hover:text-blue-700"
-                      key={item}
-                    >
-                      {item}
-                    </p>
-                  ))
-                : `${content.split(".")[0].slice(0, 91)}...`}
-            </div>
-
-            <button
-              onClick={() => setReadMore(!isReadMore)}
-              className="button-62 w-[150px]  transition duration-500 ease-in-out"
-            >
-              {isReadMore ? "Thu gọn" : " Đọc thêm"}
-            </button>
+    <div className="w-full lg:w-2/4 ">
+      {/* bg-white rounded-lg shadow-2xl */}
+      <div className="flex flex-col px-5 py-5 bg-white border rounded-lg shadow-2xl ">
+        {/* <div className="py-5 px-7"> */}
+        <img
+          src={img}
+          alt=""
+          className="mb-6  xl:h-[460px] lg:h-[340px] object-cover w-full rounded-lg border"
+        />
+        <div className="flex flex-col">
+          <h1 className="mb-3 text-lg leading-normal flex-grow h-full  sm:text-2xl text-[#363636] font-bold ">
+            {title}
+          </h1>
+          <div className="text-base sm:text-2xl text-[#778295] grow transition duration-500 ease-in-out   mb-4">
+            {isReadMore ? (
+              content.split(":").map((item) => (
+                <p
+                  className="flex gap-2 mb-3 transition duration-500 ease-in-out "
+                  key={item}
+                >
+                  {item}
+                </p>
+              ))
+            ) : (
+              <p className="text-xl">{content.split(".")[0].slice(0, 72)}...</p>
+            )}
           </div>
+
+          <button
+            onClick={() => setReadMore(!isReadMore)}
+            className="button-62 w-[150px]  transition duration-500 ease-in-out"
+          >
+            {isReadMore ? "Thu gọn" : " Đọc thêm"}
+          </button>
         </div>
       </div>
-    </>
+    </div>
 
     // <div>
     //   {isTruncated ? (

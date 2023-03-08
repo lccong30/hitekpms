@@ -22,7 +22,7 @@ const Support = () => {
           className="w-full lg:w-2/4 text-[#778295]  font-light animate__animated opacity-0"
           ref={leftRef}
         >
-          <h1 className="text-xl md:text-[36px] text-[#001238] font-bold mb-5">
+          <h1 className="text-xl md:text-[36px] text-[#001238] font-bold mb-5 leading-normal">
             Hỗ trợ tận tình tận tâm, 24/7/365
           </h1>
           <p className="text-lg font-normal text-[#778295] md:text-[24px]">
