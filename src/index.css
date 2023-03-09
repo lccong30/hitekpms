@@ -525,10 +525,13 @@ body .swiper-slide {
 body .swiper-button-next,
 body .swiper-button-prev {
     transform: translateY(-30px);
+
     transition: 0.5s ease-in-out;
 }
 
-@media screen and (max-width: 1023px) {
+
+
+@media screen and (max-width: 1125px) {
 
     body .swiper-button-next,
     body .swiper-button-prev {

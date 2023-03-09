@@ -1,7 +1,8 @@
 import React from "react";
-import { BackOfficeA, CSPB, SupportI, BMS, MLOP } from "../assets/images";
+import { BMS, MLOP } from "../assets/images";
 import ItemSubsystem from "../components/ItemSubsystem";
 import useScrollFadeIn from "../hook/useScrollFadeIn";
+import "./css/subsystem.css";
 const data = [
   {
     title: " Phân hệ CSP - Centralized Stacking Plan",
@@ -37,6 +38,16 @@ const Subsystem = () => {
         >
           Tối ưu nhân lực và thời gian quản lý kinh doanh
         </h1>
+        {/* <div className="flex flex-col gap-5 subsystem__cards lg:flex-row ">
+          {data.map((item) => (
+            <ItemSubsystemV1
+              key={item.title}
+              title={item.title}
+              content={item.content}
+              img={item.img}
+            />
+          ))}
+        </div> */}
         <div className="flex flex-col gap-5 lg:flex-row ">
           {data.map((item) => (
             <ItemSubsystem

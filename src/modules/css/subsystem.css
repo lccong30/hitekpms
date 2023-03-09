@@ -1,0 +1,8 @@
+.subsystem__cards {
+    flex-wrap: wrap;
+}
+
+.subsystem__card {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    flex: 1 1 49%;
+}
