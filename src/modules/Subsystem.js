@@ -7,13 +7,13 @@ const data = [
   {
     title: " Phân hệ CSP - Centralized Stacking Plan",
     content:
-      "Phân hệ CSP - Centralized Stacking Plan là một phương pháp quản lý chặt chẽ, liên kết nhiều bộ phận từ sale / marketing, lễ tân đến kế toán.: Nó cung cấp công cụ quản lý Stack Plan trực quan, giúp kiểm soát trạng thái hợp đồng và số lượng tương quan đồng thời quản lý tập trung các đơn vị, tạo sự tiện lợi và nhanh chóng trong hoạt động.: Phân hệ này hỗ trợ quản lý sổ khách / khách đặt phòng, quản lý fitting out, quản lý không gian quảng cáo, và xử lý các yêu cầu của khách hàng.",
+      "Phân hệ CSP - Centralized Stacking Plan là một phương pháp quản lý chặt chẽ, liên kết nhiều bộ phận từ sale/marketing, lễ tân đến kế toán.: Nó cung cấp công cụ quản lý Stack Plan trực quan, giúp kiểm soát trạng thái hợp đồng và số lượng tương quan đồng thời quản lý tập trung các đơn vị, tạo sự tiện lợi và nhanh chóng trong hoạt động.: Phân hệ này hỗ trợ quản lý sổ khách/khách đặt phòng, quản lý fitting out, quản lý không gian quảng cáo, và xử lý các yêu cầu của khách hàng.",
     img: MLOP,
   },
   {
     title: "Phân hệ Back Office - Tích hợp phân hệ tài chính",
     content:
-      "HitekERP™ là một hệ thống phần mềm tích hợp đầy đủ với các phân hệ thuộc PMS.: Đây là một phân hệ kế toán tài chính mạnh mẽ, giúp quản trị tất cả các thông tin liên quan đến tài chính, tài sản và lương nhân sự.: HitekERP™ cũng tích hợp quy trình quản lý cung ứng P2P Procurement to Payable và phân hệ quản lý kỹ thuật / kho kỹ thuật tòa nhà.: Nhờ vào tính năng tích hợp, HitekERP™ giúp tối ưu hóa quá trình quản lý, giảm thiểu thời gian và chi phí cho các doanh nghiệp. ",
+      "HitekERP™ là một hệ thống phần mềm tích hợp đầy đủ với các phân hệ thuộc PMS.: Đây là một phân hệ kế toán tài chính mạnh mẽ, giúp quản trị tất cả các thông tin liên quan đến tài chính, tài sản và lương nhân sự.: HitekERP™ cũng tích hợp quy trình quản lý cung ứng P2P Procurement to Payable và phân hệ quản lý kỹ thuật/kho kỹ thuật tòa nhà.: Nhờ vào tính năng tích hợp, HitekERP™ giúp tối ưu hóa quá trình quản lý, giảm thiểu thời gian và chi phí cho các doanh nghiệp. ",
     img: BMS,
   },
 ];
