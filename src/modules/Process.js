@@ -2,7 +2,7 @@ import React from "react";
 import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 import { CiUser } from "react-icons/ci";
 import { Collab, Easy, SaveTime } from "../assets/icons";
-import { SaveTimeI, EasyI, Integrate } from "../assets/images";
+import { Easy1, Integrate, SaveTimeI } from "../assets/images";
 import { ItemProcess } from "../components";
 import useScrollFadeIn from "../hook/useScrollFadeIn";
 
@@ -11,9 +11,10 @@ const data = [
     img1: SaveTimeI,
     title: "Tiết kiệm thời gian",
     iconTop: SaveTime,
+    x: true,
   },
   {
-    img1: EasyI,
+    img1: Easy1,
     title: "Dễ dàng sử dụng",
     iconTop: Easy,
   },
@@ -41,6 +42,7 @@ const Process = () => {
               title={item.title}
               img1={item.img1}
               className=""
+              x={item?.x ? item.x : false}
             />
           ))}
           <div
