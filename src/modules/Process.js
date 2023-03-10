@@ -1,24 +1,24 @@
 import React from "react";
-import { Collab, Easy, SaveTime } from "../assets/icons";
-import { ItemProcess } from "../components";
+import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 import { CiUser } from "react-icons/ci";
-import { AiOutlinePhone, AiOutlineMail } from "react-icons/ai";
-import { HiOutlineMail } from "react-icons/hi";
+import { Collab, Easy, SaveTime } from "../assets/icons";
+import { SaveTimeI, EasyI, Integrate } from "../assets/images";
+import { ItemProcess } from "../components";
 import useScrollFadeIn from "../hook/useScrollFadeIn";
 
 const data = [
   {
-    img1: "https://themexriver.com/wp/appics/wp-content/uploads/2022/10/sf_01.png",
+    img1: SaveTimeI,
     title: "Tiết kiệm thời gian",
     iconTop: SaveTime,
   },
   {
-    img1: "https://themexriver.com/wp/appics/wp-content/uploads/2022/10/sf_02.png",
+    img1: EasyI,
     title: "Dễ dàng sử dụng",
     iconTop: Easy,
   },
   {
-    img1: "https://themexriver.com/wp/appics/wp-content/uploads/2022/10/sf_03.png",
+    img1: Integrate,
     title: "Tích hợp nhiều tiện ích",
     iconTop: Collab,
   },
@@ -40,6 +40,7 @@ const Process = () => {
               icon={item.iconTop}
               title={item.title}
               img1={item.img1}
+              className=""
             />
           ))}
           <div

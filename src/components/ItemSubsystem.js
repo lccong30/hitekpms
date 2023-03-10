@@ -7,7 +7,7 @@ const ItemSubsystem = ({ title, content, img, text, maxLength = 91 }) => {
   return (
     <div className="w-full lg:w-2/4">
       {/* bg-white rounded-lg shadow-2xl */}
-      <div className="flex flex-col flex-grow px-5 py-5 bg-white rounded-lg shadow ">
+      <div className="flex flex-col flex-grow px-5 py-5 bg-white rounded-lg shadow-2xl ">
         {/* <div className="py-5 px-7"> */}
         <img
           src={img}

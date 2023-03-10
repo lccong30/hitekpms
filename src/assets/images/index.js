@@ -11,3 +11,7 @@ export { default as Support02 } from "./Support02.png";
 export { default as BMS } from "./BMS.png";
 export { default as MLOP } from "./MLOP.jpg";
 export { default as Banner2 } from "./pms_house.png";
+export { default as SaveTimeI } from "./SaveTime.png";
+export { default as EasyI } from "./Easy.png";
+export { default as Integrate } from "./Integrate.png";
+export { default as Integrate1 } from "./Integrate1.png";
