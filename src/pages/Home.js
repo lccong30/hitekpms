@@ -19,6 +19,7 @@ import ItemSidebar from "../components/ItemSidebar";
 import Banner from "../modules/Banner";
 import Process from "../modules/Process";
 import useScrollFadeIn from "../hook/useScrollFadeIn";
+import Review from "../modules/Review";
 const Home = () => {
   const services = useRef(null);
   const home = useRef(null);
@@ -155,6 +156,9 @@ const Home = () => {
       <div ref={support} className="border-t">
         <Support />
       </div>
+
+      <Review />
+
       <Product />
 
       <div className="bg-[#FFF5EE]">

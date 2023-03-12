@@ -21,3 +21,6 @@ export { default as Easy2 } from "./Easy2.png";
 export { default as Easy1 } from "./Easy1.png";
 export { default as EasyMin } from "./Easy-min.png";
 export { default as Time1 } from "./Time1.png";
+export { default as BgReview } from "./Bg_Review_Customer.png";
+export { default as Avatar_Custormer } from "./Avatar_Custormer.png";
+export { default as Comma } from "./Comma.png";
