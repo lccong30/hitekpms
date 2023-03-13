@@ -29,10 +29,10 @@ const ReviewV2 = () => {
       <section className="bg-[#67C3F3] border py-10  rounded-3xl section">
         <div className="title">
           <h2 className="text-lg md:text-2xl review__section-name">
-            What our customer are saying
+            PHẢN HỒI TỪ KHÁCH HÀNG
           </h2>
         </div>
-        <div className="section-center h-[400px]  md:h-[450px]">
+        <div className="section-center   md:h-[450px]">
           {people.map((item, indexPeople) => {
             const { id, image, name, title, quote } = item;
             let position = "nextSlide";

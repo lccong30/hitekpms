@@ -144,10 +144,47 @@ article h4 {
     /* display: none; */
     bottom: 0;
     right: 42%;
-
 }
 
-/* @media (min-width: 640px) {} */
+@media (min-width: 640px) {
+    .prev {
+        /* bottom: 10%; */
+        left: 45%;
+
+
+    }
+
+
+    .next {
+        /* display: none; */
+        /* bottom: 10%; */
+        right: 45%;
+    }
+}
+
+.section-center {
+    height: 410px;
+}
+
+@media (min-width: 640px) {
+    .prev {
+        /* bottom: 10%; */
+        left: 45%;
+
+
+    }
+
+
+    .next {
+        /* display: none; */
+        /* bottom: 10%; */
+        right: 45%;
+    }
+
+    .section-center {
+        height: 350px;
+    }
+}
 
 @media (min-width: 800px) {
     .text {
