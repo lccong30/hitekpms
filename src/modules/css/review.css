@@ -150,8 +150,6 @@ article h4 {
     .prev {
         /* bottom: 10%; */
         left: 45%;
-
-
     }
 
 
@@ -166,12 +164,17 @@ article h4 {
     height: 410px;
 }
 
+@media (min-width: 460px) {
+    .section-center {
+        height: 370px;
+    }
+}
+
+
 @media (min-width: 640px) {
     .prev {
         /* bottom: 10%; */
         left: 45%;
-
-
     }
 
 
@@ -186,7 +189,7 @@ article h4 {
     }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 768px) {
     .text {
         max-width: 45em;
     }
@@ -202,14 +205,16 @@ article h4 {
     }
 
     .prev {
-        left: 45%;
-
-
+        left: 43%;
     }
 
 
     .next {
-        right: 45%;
+        right: 43%;
 
+    }
+
+    .section-center {
+        height: 450px;
     }
 }
