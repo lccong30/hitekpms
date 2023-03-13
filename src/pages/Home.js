@@ -9,6 +9,7 @@ import {
   FAQ,
   Footer,
   Product,
+  ReviewV2,
   Sidebar,
   Subsystem,
   Support,
@@ -16,10 +17,9 @@ import {
 } from "../modules";
 
 import ItemSidebar from "../components/ItemSidebar";
+import useScrollFadeIn from "../hook/useScrollFadeIn";
 import Banner from "../modules/Banner";
 import Process from "../modules/Process";
-import useScrollFadeIn from "../hook/useScrollFadeIn";
-import Review from "../modules/Review";
 const Home = () => {
   const services = useRef(null);
   const home = useRef(null);
@@ -157,7 +157,8 @@ const Home = () => {
         <Support />
       </div>
 
-      <Review />
+      {/* <Review onClick={() => scrollToSection(contact)} /> */}
+      <ReviewV2 />
 
       <Product />
 

@@ -10,3 +10,4 @@ export { default as Subsystem } from "./Subsystem";
 export { default as Contact } from "./Contact";
 export { default as Product } from "./Product";
 export { default as Sidebar } from "./Sidebar";
+export { default as ReviewV2 } from "./ReviewV2";
